@@ -49,6 +49,7 @@ function handleEditNote() {
 
 function handleDeletetNote(index) {
     notes.value.splice(index, 1);
+    updateLocalStorage();
 };
 
 function updateLocalStorage() {
