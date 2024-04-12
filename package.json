@@ -1,12 +1,15 @@
 {
   "name": "notes-app",
   "version": "0.0.0",
+  "homepage": "https://github.com/EdwardZhr/notes-app/",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "ant-design-vue": "^4.0.0-rc.6",
@@ -14,6 +17,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
-    "vite": "^5.1.6"
+    "vite": "^5.1.6",
+    "gh-pages": "^6.0.0"
   }
 }

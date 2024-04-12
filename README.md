@@ -1,6 +1,6 @@
 # notes-app
 
-This template should help get you started developing with Vue 3 in Vite.
+Приложение для создания заметок: https://edwardzhr.github.io/notes-app/
 
 ## Recommended IDE Setup
 
