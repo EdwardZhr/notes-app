@@ -75,10 +75,18 @@ function showDeleteConfirm(index) {
         onOk() {
             handleDeletetNote(index)
             // Не разобрался, почему модальное окно подтверждения не закрывается и закрываю его сам
-            document.querySelectorAll('.ant-modal-root')[1].parentElement.remove()
+            if (document.querySelectorAll('.ant-modal-root')[1]) {
+                document.querySelectorAll('.ant-modal-root')[1].parentElement.remove()
+            } else {
+                document.querySelectorAll('.ant-modal-root')[0].parentElement.remove()
+            }
         },
         onCancel() {
-            document.querySelectorAll('.ant-modal-root')[1].parentElement.remove()
+            if (document.querySelectorAll('.ant-modal-root')[1]) {
+                document.querySelectorAll('.ant-modal-root')[1].parentElement.remove()
+            } else {
+                document.querySelectorAll('.ant-modal-root')[0].parentElement.remove()
+            }
         },
     });
 };  
